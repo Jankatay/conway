@@ -1,1 +1,1 @@
-Under construction
+Required opengl and libfreeglut
