@@ -7,11 +7,10 @@ void display();
 
 
 int main(int argc, char* argv[]) {
-  cellWidth = 200/2;
   // init
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-  glutInitWindowSize(200, 200);
+  glutInitWindowSize(400, 400);
   glutInitWindowPosition(0, 0);
   glutCreateWindow("conway");
   glutDisplayFunc(display);
@@ -21,6 +20,7 @@ int main(int argc, char* argv[]) {
   glutKeyboardFunc(keyboard);
   glutMouseFunc(mouse);
   glutMotionFunc(motion);
+  glutTimerFunc(1000, timer, 0);
 
   // run and exit
   glutMainLoop();
